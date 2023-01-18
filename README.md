@@ -1,5 +1,5 @@
 # Project Name
-> Outline a brief description of your project.
+> Melonoma Detection
 
 
 ## Table of Contents
@@ -8,45 +8,59 @@
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
+
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- This is an CNN based ML project for Melonoma detection based on the images from International Skin Imaging Colloboration
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Background: 
+  To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis
+
+- Dataset: 
+  The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
+  The data set contains the following diseases:
+    Actinic keratosis
+    Basal cell carcinoma
+    Dermatofibroma
+    Melanoma
+    Nevus
+    Pigmented benign keratosis
+    Seborrheic keratosis
+    Squamous cell carcinoma
+    Vascular lesion
+
+
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- Dataset:
+    "seborrheic keratosis", "dermatofibroma", "actinic keratosis", "squamous cell carcinoma" and "vascular lesion" has the least samples
+    "melanoma","nevus", "pigmented benign keratosis" and "basal cell carcinoma" has the greater samples
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- CNN model of 3 convolution layer followed by dense layer overfit the training dataset
+- CNN model of 3 convolution layer + dropout followed by dense layer + dropout underfit the dataset
+- Data augmentation(Randomflip, RandomRotate, RandomZoom)CNN model of 3 convolution layer + dropout followed by dense layer + dropout underfit the dataset
+- Dataset was enhanced with 500 augmented images for each class and a model with CNN model of 3 convolution layer + dropout followed by dense layer + dropout was fitting well the training dataset and validation dataset
+
+
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Python 3.8.10
+- TensorFlow 2.9.2
+- google-colab 1.0.0
+- Keras 2.9.0
+- Keras preprocessing 1.1.2
+- matplotlib 3.2.2
+- numpy 1.21.6
+- pandas 1.3.5
+- pip 22.0.4
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@vivekprahlada] - feel free to contact me!
 
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
